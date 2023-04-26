@@ -1,0 +1,15 @@
+.primaryButton {
+  background: none;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  padding: 15px 40px;
+  color: #fff;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    outline: none;
+    background: #ffffff80;
+  }
+}

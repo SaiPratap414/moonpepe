@@ -1,0 +1,30 @@
+.socialBar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  margin-right: 40px;
+  top: 40%;
+  gap: 48px;
+  transition: all 0.2s ease-in-out;
+
+  img {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &.bg {
+      background-color: #fff;
+      border-radius: 50%;
+      border: none;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    top: 67%;
+    margin-right: 20px;
+  }
+}

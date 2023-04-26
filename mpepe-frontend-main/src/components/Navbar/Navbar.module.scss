@@ -1,0 +1,116 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding: 20px 20px;
+  width: 85vw;
+  box-sizing: border-box;
+  width: 100%;
+  z-index: 2;
+  transition: all linear 0.1s;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+
+  &.open {
+    background-color: #000;
+  }
+
+  &.bg {
+    background-color: #000;
+  }
+
+  @media screen and (max-width: 1024px) {
+    justify-content: space-between;
+    margin-left: 0px;
+  }
+
+  img {
+    width: 77px !important;
+    height: 76px !important;
+
+    @media screen and (max-width: 1024px) {
+      width: 52px !important;
+      height: 52px !important;
+    }
+  }
+
+  a {
+    color: #fff;
+    font-size: 16px;
+    line-height: 17px;
+    text-decoration: none;
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .hamburgerIcon {
+    cursor: pointer;
+    display: none;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all ease-in-out 0.2s;
+
+    @media screen and (max-width: 1024px) {
+      display: block;
+    }
+
+    .line {
+      width: 20px;
+      height: 1px;
+      margin: 7px 0;
+      transition: all linear 0.3s;
+      background: #fff;
+
+      &:first-child {
+        margin-top: 0px;
+      }
+
+      &:last-child {
+        margin-bottom: 0px;
+      }
+    }
+
+    &.open {
+      border: 1px solid #000;
+      background-color: #fff;
+
+      .line {
+        background-color: #000;
+      }
+    }
+  }
+}
+
+.mobileNavbar {
+  position: absolute;
+  top: -310px;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: ease-in-out 0.2s;
+  box-sizing: border-box;
+  z-index: 1;
+
+  &.open {
+    position: sticky;
+    top: 90px;
+  }
+
+  a {
+    padding: 20px;
+    padding-left: 40px;
+    font-size: 16px;
+    line-height: 17px;
+    color: #000;
+    text-decoration: none;
+    border-bottom: 1px solid #00000010;
+  }
+}

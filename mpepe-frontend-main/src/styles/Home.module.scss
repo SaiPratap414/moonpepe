@@ -1,0 +1,277 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+
+  .hero {
+    min-height: 100vh;
+    margin-top: -15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+
+    .playnow {
+      margin-bottom: 40px;
+      width: 170px;
+      margin-left: -60px;
+    }
+  }
+
+  .about {
+    display: flex;
+    padding: 40px 150px;
+    gap: 180px;
+
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+      padding: 40px 40px;
+      gap: 40px;
+    }
+
+    div {
+      &:first-child {
+        text-align: right;
+        width: 100%;
+      }
+
+      h2 {
+        font-size: 40px;
+        line-height: 42px;
+        letter-spacing: 0.6px;
+        color: #ffffff;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 31px;
+        color: #ffffff;
+      }
+
+      .buynow {
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .howtobuy {
+    background-color: #04031f;
+    min-height: 50vh;
+    width: 100%;
+    margin-top: 40px;
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+
+    .boxes {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+
+      .box {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+        border: 3px solid #fff;
+        box-shadow: 0px 0px 10px #fff;
+        width: 80%;
+        margin-bottom: 56px;
+        box-sizing: border-box;
+
+        @media screen and (max-width: 1024px) {
+          flex-direction: column;
+          gap: 0px;
+          padding: 40px 0px;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        h4 {
+          font-size: 23px;
+          margin-bottom: 0;
+        }
+
+        p {
+          font-size: 15px;
+          opacity: 0.7;
+          margin-bottom: 40px;
+        }
+
+        &.left {
+          border-top-right-radius: 65px;
+          border-bottom-right-radius: 65px;
+          border-left: none;
+          align-self: flex-start;
+          padding-left: 200px;
+          padding-right: 50px;
+
+          @media screen and (max-width: 1024px) {
+            padding-left: 50px;
+          }
+        }
+
+        &.right {
+          border-top-left-radius: 65px;
+          border-bottom-left-radius: 65px;
+          border-right: none;
+          align-self: flex-end;
+          padding-right: 200px;
+          padding-left: 50px;
+
+          @media screen and (max-width: 1024px) {
+            padding-right: 50px;
+          }
+        }
+      }
+    }
+  }
+
+  .tokenomics {
+    min-height: 50vh;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 40px;
+
+    h2 {
+      font-size: 32px;
+      line-height: 78px;
+    }
+
+    img {
+      max-width: 500px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .totalSupply {
+      text-align: right;
+      text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.498), -1px 1px 0px rgba(0, 0, 0, 0.498),
+        1px 1px 0px rgba(0, 0, 0, 0.498), 1px -1px 0px rgba(0, 0, 0, 0.498);
+
+      @media screen and (max-width: 1024px) {
+        display: flex;
+        gap: 10px;
+      }
+    }
+
+    .tk {
+      background: #363752;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      margin: 0 20px;
+      width: 100%;
+
+      @media screen and (max-width: 1024px) {
+        flex-direction: column-reverse;
+      }
+    }
+
+    .tk .tk-head {
+      color: #fff;
+      padding: 20px 1px;
+    }
+    .tk table {
+      width: 100%;
+      text-align: center;
+      border-collapse: collapse;
+    }
+    .tk table thead th {
+      background: #fff;
+      padding: 10px;
+      border: 1px solid #fff;
+      font-weight: bold;
+      color: #000;
+      box-shadow: 0px 0px 5px #fff;
+    }
+    .tk table td {
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 7px;
+      box-shadow: 0px 0px 5px #fff;
+    }
+    .tk .tk-img {
+      text-align: right;
+    }
+  }
+
+  .contact {
+    background-color: #04031f;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+
+    h2 {
+      margin-top: 0;
+      font-size: 32px;
+      line-height: 78px;
+    }
+
+    .social {
+      display: flex;
+      gap: 80px;
+      margin-top: 10px;
+
+      img {
+        width: 48px;
+        height: 48px;
+        filter: grayscale(100%);
+      }
+    }
+
+    .email {
+      margin: 20px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 33px;
+      opacity: 0.8;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 12px;
+        line-height: 28px;
+      }
+    }
+
+    .disclaimer {
+      margin-top: 30px;
+
+      p {
+        margin: 0;
+        text-align: center;
+        font-size: 14px;
+        line-height: 33px;
+        opacity: 0.8;
+
+        @media screen and (max-width: 1024px) {
+          font-size: 12px;
+          line-height: 28px;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    color: #fff;
+    margin-top: 40px;
+  }
+}
